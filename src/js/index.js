@@ -1,13 +1,30 @@
 // Javascript Entry Point
 
+import $ from 'jquery';
+
+
+// $('.section1').on('click', function() {
+//   $('.section2').toggleClass('altPosition2');
+//   $('.section3').toggleClass('altPosition3');
+// });
+
+// $('.section2').on('click', function() {
+//   $('.section2').hasClass('altPosition2') ? $('.section2').toggleClass('altPosition2'): $('.section3').toggleClass('altPosition3');
+  
+// });
+
+// $('.section3').on('click', function() {
+//   $('.section2').hasClass('altPosition2') ? $('.section2').removeClass('altPosition2') : $('.section2').toggleClass('altPosition2');
+//   $('.section3').toggleClass('altPosition3');
+// });
+
+
+
+/////After trying to figure out a jquery approach that ensured sections wouldn't ever overlap regardless of height and click order, I tried this very long javascript approach
 
 var section1 = document.querySelector(".section1");
 var section2 = document.querySelector(".section2");
 var section3 = document.querySelector(".section3");
-
-
-/////try changing the functions to check if the current target is open or closed.
-
 
 var secTwoDefaultPosition = true;
 var secThreeDefaultPosition = true;
