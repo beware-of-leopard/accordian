@@ -9,7 +9,6 @@
 	text-align: center;
 	background: white;
 	width: 100%;
-	position: absolute;
 	border: 1px solid black;
 
 	h2{
@@ -22,26 +21,36 @@
 		background: #62e6d8;
 		cursor: pointer;
 	}
+	div{
+		max-height: 250px;
+	}
+	.closed{
+	max-height: 0px;
+	transition: all 1.8s ease-in-out;
+	overflow: hidden;
+}
 	p{
 		padding: 10px 20px;
 		text-align: left;
 	}
 }
 
-.section2{
-	top: 80px;
-	transition: all 0.5s linear;
-}
 
-.section3{
-	top: 160px;
-	transition: all 0.5s linear;
-}
 
-.altPosition2{
-	top: 160px;
-}
+// .section2 div{
+// 	max-height: 0px;
+// 	transition: all 0.5s linear;
+// }
 
-.altPosition3{
-	top: 240px;
-}
+// .section3 div{
+// 	max-height: 0px;
+// 	transition: all 0.5s linear;
+// }
+
+// .altPosition2{
+// 	top: 160px;
+// }
+
+// .altPosition3{
+// 	top: 240px;
+// }
